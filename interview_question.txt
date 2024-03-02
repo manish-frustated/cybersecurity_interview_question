@@ -148,7 +148,7 @@ SANS Top 25 is a list of the most dangerous software errors compiled by the SANS
 
 15. Deserialization of Untrusted Data (CWE-502): This vulnerability arises when a program deserializes data from an untrusted source without proper validation, allowing attackers to execute arbitrary code or manipulate the application's behavior. For example, if a web application deserializes user-supplied data without verifying its integrity, an attacker could craft malicious serialized objects to exploit vulnerabilities in the deserialization process.
 
-16. CWE-77 : Improper Neutralization of Special Elements used in a Command ('Command Injection')
+16. CWE-77 : Improper Neutralization of Special Elements used in a Command ('Command Injection') : same as no. 5
 
 17. Improper Restriction of Operations within the Bounds of a Memory Buffer (CWE-119): This vulnerability occurs when a program performs operations on memory buffers without proper bounds checking, leading to buffer overflows or other memory corruption issues. For instance, if a program copies data into a fixed-size buffer without verifying that the data will fit within the buffer's boundaries, it may overwrite adjacent memory regions, potentially leading to crashes or security vulnerabilities.
 
