@@ -20,8 +20,3 @@
 - **Security Analyst:** They monitor systems for security breaches and analyze security threats to keep the organization safe.
 - **Digital Forensic Examiner:** They investigate cyber incidents, collect evidence, and analyze digital data to understand and mitigate security breaches.
 
-
-
-
-
-mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
