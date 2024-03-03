@@ -69,4 +69,19 @@
 
 ```
 
+## SNMP (Simple Network Management Protocol):
+
+```bash
+SNMP is a protocol used to manage and monitor network devices like routers, switches, and servers.
+
+Attackers can use SNMP for enumeration, which means gathering information about the network. For example, they might use SNMP to find out what devices are connected to the network, their configurations, and potentially sensitive information like passwords if it's configured insecurely.
+```
+
+## SMTP (Simple Mail Transfer Protocol):
+
+```bash
+SMTP is a protocol used for sending and receiving email.
+
+Attackers can use SMTP for enumeration by trying to gather information about email addresses, server configurations, and potentially exploiting vulnerabilities in email servers. For example, they might use SMTP commands to query a mail server for a list of valid email addresses or to test for open relays that could be used for spamming or sending malicious emails.
+```
 
