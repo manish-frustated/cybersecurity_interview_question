@@ -60,4 +60,13 @@
   Example: Searching for publicly accessible documents containing confidential information using specific search queries like filetype:pdf "confidential".
 ```
 
+## SMB:
+
+```bash
+ SMB (Server Message Block): It's a network protocol used by computers mainly for sharing files, printers, and other resources.
+ 
+ How Attackers Use SMB Enumeration: Attackers can use SMB enumeration to gather information about a network, like finding out what devices are connected, what shares are available, or even usernames and passwords. This helps them plan a targeted attack. For example, if they find a share with sensitive information, they might try to gain access to it using the information they gathered through enumeration.
+
+```
+
 
