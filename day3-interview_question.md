@@ -52,3 +52,17 @@
    
    Tcsh (TENEX C Shell): A variant of the C shell with additional features like command-line editing and job control.
 ```
+
+## PHP wrappers
+
+```bash
+   PHP wrappers can be a valuable tool when assessing web applications for security vulnerabilities, including Local File Inclusion (LFI)
+   PHP wrappers are special protocols that allow PHP functions to access various resources, including local files.
+   By leveraging PHP wrappers, a penetration tester can exploit LFI vulnerabilities to read sensitive files on the server.
+
+   Example scenario :
+   Suppose a web application has an LFI vulnerability that allows an attacker to include arbitrary files.
+   The attacker can craft a request using a PHP wrapper, such as php://filter/convert.base64-encode/resource=/etc/passwd.
+   The server will interpret this as a request to read the /etc/passwd file, encode it in base64, and return the result.
+   The attacker can then decode the base64 output to obtain information about system users.
+```
