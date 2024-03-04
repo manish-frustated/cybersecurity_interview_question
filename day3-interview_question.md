@@ -66,3 +66,17 @@
    The server will interpret this as a request to read the /etc/passwd file, encode it in base64, and return the result.
    The attacker can then decode the base64 output to obtain information about system users.
 ```
+
+## Remote File Inclusion (RFI) Attack:
+
+```bash
+   This attack is about making a website load a file from somewhere else, usually a bad place controlled by the hacker.
+   Think of it like this: You're inviting someone over for dinner, but instead of bringing food, they bring a virus. That's what happens in an RFI attack.
+   For example, if a website loads a file like this: http://example.com/loadfile.php?file=badstuff.php, the hacker can make it load their malicious file instead of the real one.
+
+   Difference Between RFI and Local File Inclusion (LFI) Attack:
+
+   RFI is when the hacker tricks the website into loading a file from somewhere else, usually controlled by the hacker. It's like inviting a virus into your system.
+   LFI is a bit different. It's when the hacker tricks the website into showing a file that's already on the server, usually by manipulating the URL. So, instead of bringing in a virus from outside, they're just showing something nasty that's already there.
+   Imagine you're reading a book, and the hacker swaps out a page in the book with something inappropriate. That's LFI.
+```
