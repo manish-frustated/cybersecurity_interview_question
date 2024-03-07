@@ -61,3 +61,15 @@ IP subnetting is the process of dividing a network into smaller sub-networks (su
 ```bash
 CIDR is a method for allocating IP addresses and IP routing. It allows for more flexible allocation of IP addresses than the older class-based system. For example, `192.168.1.0/24` represents a CIDR notation where `/24` denotes the number of bits in the network portion of the address.
 ```
+
+##  Anti-virus detection technology
+
+```bash
+1. **Signature-based detection**: Think of this like recognizing a wanted poster for a criminal. Antivirus software uses signature-based detection by comparing files on your computer to a database of known malware signatures. If a file's signature matches one in the database, it gets flagged as malware. For example, if there's a known virus called "Trojan Horse X," the antivirus will detect it if it finds a file with the exact signature of Trojan Horse X.
+
+2. **Heuristic-based detection**: This is like recognizing suspicious behavior even if you don't have a specific warning about it. Antivirus software uses heuristic-based detection by looking for behaviors that might indicate malware, even if it doesn't match a known signature. For instance, if a program tries to modify system files or access sensitive areas of your computer, the antivirus might flag it as potentially harmful based on its behavior.
+
+3. **Behavior-based detection**: Similar to heuristic-based detection, this method focuses solely on the behavior of programs. Instead of looking for specific signs of malware, it watches how programs act on your computer. For example, if a program suddenly starts encrypting a lot of files rapidly, behaving like ransomware, the antivirus might intervene, even if it doesn't recognize the specific ransomware variant.
+
+4. **Machine learning detection**: This involves teaching computers to recognize malware by showing them lots of examples. Instead of relying solely on fixed rules or patterns, machine learning algorithms analyze data and learn from it. For example, a machine learning model might be trained on thousands of examples of malware and non-malware files. Over time, it learns to distinguish between the two based on various features, such as file structure, code behavior, or even language patterns. So, if a new file behaves similarly to known malware files, the machine learning model might flag it as a potential threat, even if it doesn't have a specific signature.
+```
