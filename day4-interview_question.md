@@ -96,4 +96,18 @@ CIDR is a method for allocating IP addresses and IP routing. It allows for more 
    Non-Staged Payloads: In a non-staged payload, the entire payload is delivered at once. There's no need for multiple stages as the payload itself contains all the necessary code to execute the desired actions.
    Example: An attacker sends a payload that directly executes the desired malicious actions, such as deleting files or creating backdoors, without the need for additional downloads or instructions from a command and control server.
 ```
+## Remote Procedure Call (RPC) protocol
+```bash
+   What is RPC?
+   RPC stands for Remote Procedure Call. It's a protocol that allows one computer to execute code on another computer over a network.
+
+   How does RPC work?
+   RPC works like this:A program on one computer wants to execute code on another computer.
+   It sends a request over the network to the remote computer.
+   The remote computer receives the request, executes the code, and sends back the result.
+   
+   What are some examples of RPC on Windows systems?
+   An example of RPC on Windows is when you share a printer over a network. When you print a document from your computer, it sends an RPC request to the computer where the printer is connected. That computer then processes the print job and sends back the result to your computer.
+```
+
 
