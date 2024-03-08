@@ -10,12 +10,6 @@
    For example, imagine a company hires a red team to perform a penetration test. The red team discovers a vulnerability in the company's web application that could allow an attacker to access sensitive customer data. They report this to the blue team, who then patches the vulnerability and implements additional security measures to prevent similar attacks in the future. Throughout this process, the purple team facilitates communication and collaboration between the red and blue teams to ensure a comprehensive security response.
 ```
 
- IP Addresses
-
-```bash
-   
-```
-
 ## IP Address: 
 ```bash
 An IP (Internet Protocol) address is a unique numerical label assigned to each device connected to a computer network that uses the Internet Protocol for communication. It identifies the location of a device in a network. For example, `192.168.1.1`.
@@ -73,3 +67,33 @@ CIDR is a method for allocating IP addresses and IP routing. It allows for more 
 
 4. **Machine learning detection**: This involves teaching computers to recognize malware by showing them lots of examples. Instead of relying solely on fixed rules or patterns, machine learning algorithms analyze data and learn from it. For example, a machine learning model might be trained on thousands of examples of malware and non-malware files. Over time, it learns to distinguish between the two based on various features, such as file structure, code behavior, or even language patterns. So, if a new file behaves similarly to known malware files, the machine learning model might flag it as a potential threat, even if it doesn't have a specific signature.
 ```
+
+## Reverse Shell and Bind Shell:
+```bash
+   Reverse Shell: In a reverse shell attack, an attacker connects to a compromised system from an external machine. The compromised system opens a network connection to the attacker's machine, giving the attacker remote access to execute commands on the compromised system.
+   Example: Attacker runs a command on the victim's system to connect back to the attacker's machine, granting the attacker remote access to execute commands.
+   
+   Bind Shell: In a bind shell attack, the attacker sets up a service on a compromised system that listens for incoming connections. When a connection is made, the attacker gains access to execute commands on the compromised system.
+   Example: Attacker sets up a service on a compromised server, and when the attacker connects to that service, they gain remote access to execute commands on the compromised system.
+```
+
+## Credential Stuffing and Password Spraying:
+```bash
+   Credential Stuffing: In credential stuffing, attackers use lists of previously stolen usernames and passwords to try to gain unauthorized access to user accounts on various websites or systems. They automate the process of trying these combinations at scale.
+   Example: An attacker uses a list of usernames and passwords leaked from one website to try to log in to various other websites, hoping that users have reused the same credentials.
+   
+   Password Spraying: In password spraying, attackers use a single password (or a small set of passwords) and try them against many different user accounts. This method reduces the risk of getting locked out due to multiple failed login attempts.
+   Example: An attacker tries a common password like "password123" against thousands of different user accounts across various systems.
+```
+
+## Shell Code and Staged/Non-Staged Payloads:
+```bash
+   Shell Code: Shell code is a small piece of code that an attacker injects into a vulnerable system to gain control or execute specific actions. It's often used in exploits to take control of a system.
+   
+   Staged Payloads: In a staged payload, the payload is delivered in multiple stages. The initial payload might be small and simple, just enough to establish a connection or download additional code. Then, additional code is downloaded and executed to complete the attack.
+   Example: An attacker delivers a small payload that establishes a connection to a command and control server. Once connected, the server sends further instructions or additional code to execute on the compromised system.
+
+   Non-Staged Payloads: In a non-staged payload, the entire payload is delivered at once. There's no need for multiple stages as the payload itself contains all the necessary code to execute the desired actions.
+   Example: An attacker sends a payload that directly executes the desired malicious actions, such as deleting files or creating backdoors, without the need for additional downloads or instructions from a command and control server.
+```
+
