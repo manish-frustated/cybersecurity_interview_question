@@ -27,7 +27,18 @@ This is like a command center for cybersecurity. It's where experts monitor and 
 
   Here's an example: Imagine you have a door (your computer system) with a lock (your cybersecurity measures) to keep it secure. A threat could be someone trying to pick the lock (a hacker) or a virus trying to break through the door (malware). These hackers or viruses are the threat actors. They're the ones trying to breach your cybersecurity defenses and cause harm.
 ```
+## Risks, Threats, Vulnerabilities, and Exploits
+```bash
+  1. **Risks**: These are potential events or situations that could harm an organization's assets, operations, or reputation. In cybersecurity, risks often involve the possibility of unauthorized access, data breaches, or service disruptions. For example, the risk of a hacker gaining access to sensitive customer information.
 
+  2. **Threats**: Threats are the potential sources of danger that can exploit vulnerabilities in a system. These can include hackers, malware, disgruntled employees, or even natural disasters. For example, a threat could be a malicious attacker attempting to steal login credentials through a phishing email.
+
+  3. **Vulnerabilities**: Vulnerabilities are weaknesses in a system's security posture that could be exploited by threats to cause harm. These weaknesses could be in software, hardware, processes, or even human behavior. An example of a vulnerability is outdated software that hasn't been patched, leaving it open to exploitation by malware.
+
+  4. **Exploits**: Exploits are specific techniques or tools used by attackers to take advantage of vulnerabilities and carry out malicious activities. This could involve using known software bugs to gain unauthorized access to a system or executing code remotely. For example, a hacker might use a known exploit to bypass a firewall and gain access to a company's internal network.
+
+  5. **Threat Modelling**: Threat modeling is a structured approach to identifying and prioritizing potential threats to a system. It involves analyzing the system's architecture, identifying potential vulnerabilities, and assessing the likelihood and impact of different threats. For example, in threat modeling, a company might identify that its web application is vulnerable to SQL injection attacks and prioritize implementing measures to mitigate this threat.
+```
 ## Threat Intelligence:
 
 ```bash
