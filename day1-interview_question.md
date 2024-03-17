@@ -21,6 +21,12 @@ Defensive Security: This is like being the security guard. It's about setting up
 ```bash
 This is like a command center for cybersecurity. It's where experts monitor and analyze security alerts and incidents in real-time to defend against cyber threats.
 ```
+## Threat and Threat actors
+```bash
+  threat in cybersecurity is anything that has the potential to cause harm to your computer systems, networks, or data. Threat actors are the entities or individuals behind these threats, like hackers or malicious software creators.
+
+  Here's an example: Imagine you have a door (your computer system) with a lock (your cybersecurity measures) to keep it secure. A threat could be someone trying to pick the lock (a hacker) or a virus trying to break through the door (malware). These hackers or viruses are the threat actors. They're the ones trying to breach your cybersecurity defenses and cause harm.
+```
 
 ## Threat Intelligence:
 
