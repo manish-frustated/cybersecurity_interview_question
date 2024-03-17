@@ -109,5 +109,3 @@ CIDR is a method for allocating IP addresses and IP routing. It allows for more 
    What are some examples of RPC on Windows systems?
    An example of RPC on Windows is when you share a printer over a network. When you print a document from your computer, it sends an RPC request to the computer where the printer is connected. That computer then processes the print job and sends back the result to your computer.
 ```
-
-
