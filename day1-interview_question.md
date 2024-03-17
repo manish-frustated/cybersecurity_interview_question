@@ -73,7 +73,19 @@ The CIA triad stands for Confidentiality, Integrity, and Availability. It is a m
 ```bash
 Network security involves protecting computer networks from unauthorized access, misuse, and disruptions. This includes measures such as firewalls, intrusion detection systems (IDS), encryption, and virtual private networks (VPN) to safeguard network traffic and data. 
 ```
+## PCI DSS & NIST Cybersecurity Framework
+```bash
+  1. PCI DSS (Payment Card Industry Data Security Standard):
+   - PCI DSS is a set of security standards designed to ensure that all companies that accept, process, store, or transmit credit card information maintain a secure environment.
+   - It's like a rulebook that companies handling credit card information must follow to keep that data safe.
+   - Example: If you have ever made a purchase online and entered your credit card details, the website you used must comply with PCI DSS to ensure your information isn't stolen by hackers.
 
+  2. NIST Cybersecurity Framework:
+   - The NIST Cybersecurity Framework is a set of guidelines, best practices, and standards to help organizations manage and reduce cybersecurity risks.
+   - It provides a structured approach to cybersecurity, dividing it into five key functions: Identify, Protect, Detect, Respond, and Recover.
+   - Think of it as a toolbox for organizations to assess and improve their cybersecurity posture.
+   - Example: A company might use the NIST framework to identify its critical assets (Identify), put up firewalls and encryption (Protect), install intrusion detection systems (Detect), have an incident response plan (Respond), and develop a backup system (Recover) in case of a cyber attack.
+```
 ## Firewall, IDS, IPS, VPN, Antivirus
 
 ```bash
