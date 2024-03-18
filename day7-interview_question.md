@@ -73,3 +73,18 @@
 
     This attack can be dangerous because it allows attackers to gain access to sensitive systems without raising suspicion, potentially leading to data theft, sabotage, or further network compromise.
 ```
+
+## IPV6 DNS Takeover
+```bash
+    An IPv6 DNS takeover attack in the context of cybersecurity refers to a method where an attacker manipulates the Domain Name System (DNS) settings in an IPv6 network to redirect traffic or impersonate legitimate services. 
+
+    Here's a simple example:
+
+    Let's say you're in charge of a company's network, and your network relies on IPv6 for communication. The Domain Name System (DNS) is like a phonebook for the internet, translating domain names (like example.com) into IP addresses (like 192.0.2.1).
+
+    Now, an attacker gains access to your network and changes the DNS settings. Instead of legitimate DNS servers, they point the network to their own malicious servers. When someone in your company tries to access a website or service by typing in its domain name, the malicious DNS server intercepts that request and redirects it to a fake website or service controlled by the attacker. This can lead to various malicious activities, such as stealing login credentials or spreading malware.
+
+    In the context of Active Directory, which is a service for managing network resources in a Windows environment, an IPv6 DNS takeover attack could disrupt the normal operation of Active Directory services or even allow the attacker to gain unauthorized access to sensitive resources.
+
+    In interviews, it's essential to explain the attack in simple terms and provide examples to demonstrate understanding.
+```
