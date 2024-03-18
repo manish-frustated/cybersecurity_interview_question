@@ -54,3 +54,22 @@
 
     This kind of attack can be used for various malicious purposes, such as stealing login credentials or redirecting users to fake websites. It's a threat to network security and can be used as a part of broader attacks on Active Directory networks.
 ```
+
+## SMB Relay Attacks
+```bash
+    SMB Relay Attack is a cybersecurity technique where an attacker intercepts communication between two computers in a network, tricks them into authenticating with the attacker's machine, and then gains unauthorized access to the network. 
+
+    Here's a simple example:
+
+    1. Alice wants to access files on the company's server (Server A) and sends authentication requests to it.
+
+    2. Eve, the attacker, intercepts Alice's authentication request. Instead of directly attacking Alice or Server A, Eve relays the request to Bob's computer (Computer B) on the same network.
+
+    3. Computer B, thinking the request is legitimate, responds with authentication credentials to Eve.
+
+    4. Eve then relays these credentials to Server A, which grants access, believing it's Alice who's requesting it.
+
+    5. Now, Eve has unauthorized access to Server A, even though she never directly attacked it or Alice.
+
+    This attack can be dangerous because it allows attackers to gain access to sensitive systems without raising suspicion, potentially leading to data theft, sabotage, or further network compromise.
+```
