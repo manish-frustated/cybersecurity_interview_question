@@ -88,3 +88,17 @@
 
     In interviews, it's essential to explain the attack in simple terms and provide examples to demonstrate understanding.
 ```
+
+## Kerberoasting
+```bash
+    Sure! Kerberoasting is a type of cyberattack that targets Active Directory (AD) authentication systems. Here's a simple explanation with an example:
+
+1. **What is Kerberoasting?**
+   - Kerberos is a network authentication protocol used by Active Directory to verify users' identities. Kerberoasting is a technique where attackers exploit weaknesses in the Kerberos protocol to steal encrypted credentials from AD.
+
+2. **How does it work?**
+   - In Active Directory, there are service accounts that run various services (like email servers, databases, etc.). These service accounts often use Kerberos to authenticate. Kerberoasting takes advantage of the fact that these service account passwords are stored in a format that can be cracked.
+
+3. **Example:**
+   - Let's say there's a service account called "ServiceXYZ" in Active Directory, which uses Kerberos authentication. An attacker can request a Ticket-Granting Service (TGS) ticket for the ServiceXYZ account without actually knowing its password. The attacker then extracts this encrypted TGS ticket and tries to crack it offline using specialized tools. If successful, the attacker can retrieve the plaintext password for the ServiceXYZ account.
+```
