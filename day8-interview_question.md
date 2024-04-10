@@ -12,7 +12,7 @@
 ## Android terminologies
 
 ```bash
-  Activity:
+    Activity:
     Explanation: An Activity is like a window in your Android app. It represents a single screen with a user interface where users can interact.
     Example: Think of an Activity as a page in a book. Each page represents a different Activity, and you can flip between them to access different parts of the book (your app).
     
@@ -47,4 +47,36 @@
     Services:
     Explanation: Services are components that run in the background to perform long-running operations or to perform work for remote processes.
     Example: Playing music in the background while you use other apps is typically done by a Service. It runs independently of the user interface, ensuring music continues even if you switch to another app.
+```
+
+## APK (Android Application Package)
+
+```bash
+  An APK (Android Application Package) is like a bundle that holds everything needed for an Android app to run on your device. Let's break down what's inside an APK:
+
+    1. AndroidManifest.xml: This is like the blueprint of the app. It contains essential information about the app, such as its name, icon, permissions it needs to function, and the components it comprises (like activities, services, broadcast receivers, etc.). It's like the map your phone uses to understand how to run the app.
+
+    2. classes.dex: This is where the code of the app lives. Specifically, it's the compiled bytecode of the Java or Kotlin code that developers write to make the app work. Think of it as the engine of the app, where all the instructions are stored for your phone to understand and execute.
+
+    3. res (resources): This folder contains all the resources the app uses, like images, layouts, strings (text), and other assets. It's like a storage unit where the app keeps all the things it needs to look good and function properly.
+
+    4. META-INF: This folder holds some important files related to the security and integrity of the APK.
+
+         a. Manifest.mf: This file contains meta-information about the contents of the APK, like file names and their corresponding hashes. It helps ensure that nothing has been tampered with or changed.
+
+        b. cert.sf: This file contains the list of files in the APK and their corresponding SHA-1 hashes, which are used to verify the integrity of the APK.
+
+        c. cert.rsa: This file contains the digital signature of the APK, which is used to verify that the APK comes from a trusted source and hasn't been modified.
+
+For example, let's say you have a messaging app called "ChatApp". Inside its APK, you'd find:
+
+- AndroidManifest.xml: It would specify the app's name, permissions to access the internet, camera (if needed), and activities like "ChatActivity" or "SettingsActivity".
+
+- classes.dex: This would contain all the compiled code for sending messages, displaying chats, handling notifications, etc.
+
+- res: This would include images for the app logo, icons for buttons, layouts for different screens (like the chat screen or contact list), and strings for messages or error prompts.
+
+- META-INF: These files would ensure that the APK is genuine and hasn't been tampered with since it was signed by the developer.
+
+So, an APK is essentially a package that holds together everything an app needs to work on your Android device, from its code to its resources and security information.
 ```
