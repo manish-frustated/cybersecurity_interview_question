@@ -80,3 +80,47 @@ For example, let's say you have a messaging app called "ChatApp". Inside its APK
 
 So, an APK is essentially a package that holds together everything an app needs to work on your Android device, from its code to its resources and security information.
 ```
+## Top 10 Mobile Risks - 2024
+
+```bash
+1. **Improper Credential Usage (M1)**:
+   - **Explanation**: This means using usernames and passwords in a way that's not safe.
+   - **Example**: If you use the same password for your email, bank account, and social media, if one gets hacked, all of them are at risk.
+
+2. **Inadequate Supply Chain Security (M2)**:
+   - **Explanation**: This refers to the security of the process of making and delivering the mobile device or its software.
+   - **Example**: If a company that makes a part of your phone's software has weak security, hackers could exploit that weakness to access your data.
+
+3. **Insecure Authentication/Authorization (M3)**:
+   - **Explanation**: This means the methods used to verify your identity or permissions aren't strong enough.
+   - **Example**: If an app lets you log in with just a simple 4-digit PIN, instead of a more secure password, it's easier for someone else to get into your account.
+
+4. **Insufficient Input/Output Validation (M4)**:
+   - **Explanation**: Not checking the data coming in or going out properly, which can lead to security issues.
+   - **Example**: If an app doesn't check the data you input, like a username or email address, for malicious code, hackers could inject harmful scripts.
+
+5. **Insecure Communication (M5)**:
+   - **Explanation**: This means the way your phone sends and receives data isn't properly protected.
+   - **Example**: If you're using a public Wi-Fi network and your messaging app doesn't encrypt your messages, someone could intercept and read them.
+
+6. **Inadequate Privacy Controls (M6)**:
+   - **Explanation**: This refers to not having enough measures in place to protect your personal information.
+   - **Example**: If a fitness app doesn't ask for your permission before accessing your contacts or location, it could share that data without your consent.
+
+7. **Insufficient Binary Protections (M7)**:
+   - **Explanation**: This involves not safeguarding the actual code of the mobile app.
+   - **Example**: If an app doesn't have protections against reverse engineering, hackers could analyze the code to find vulnerabilities.
+
+8. **Security Misconfiguration (M8)**:
+   - **Explanation**: This happens when security settings are set up incorrectly.
+   - **Example**: If a server that holds your app's data allows anyone to access it because of a misconfigured setting, your data could be exposed.
+
+9. **Insecure Data Storage (M9)**:
+   - **Explanation**: This is about not keeping your data safe when it's stored on your device or in the cloud.
+   - **Example**: If a note-taking app stores your passwords in plain text instead of encrypting them, someone who gains access to your phone could easily find them.
+
+10. **Insufficient Cryptography (M10)**:
+   - **Explanation**: This means not using strong enough methods to encode your data.
+   - **Example**: If a messaging app doesn't use strong encryption, messages you send could be intercepted and read by hackers.
+```
+
