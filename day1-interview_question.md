@@ -151,26 +151,46 @@ By understanding these different stages of an attack, cybersecurity professional
 ## OWASP Top 10 2021
 
 ```bash
-1. **Broken Access Control**: This means not properly restricting what users can do. For example, imagine if a regular user could access an admin panel and change important settings.
+1. **Broken Access Control (A01)**:
+   - This happens when a system doesn't properly restrict what users can do. Imagine if a website doesn't check if you're supposed to see certain pages, and you can access sensitive information or perform actions you shouldn't.
+   - Real Attack Scenario: A user changes a number in the URL to access another user's private data, like their emails or financial information.
 
-2. **Cryptographic Failures**: This is about messing up encryption, which can lead to exposing sensitive information. For instance, if a website stores passwords in a way that hackers can easily decode them.
+2. **Cryptographic Failures (A02)**:
+   - Cryptography is about keeping data secure through methods like encryption. When there's a cryptographic failure, it means these methods aren't working properly, and attackers might be able to break into encrypted data.
+   - Real Attack Scenario: Attackers exploit a flaw in a website's encryption to steal users' passwords, even though they're supposed to be secure.
 
-3. **Injection**: This happens when attackers insert malicious code into a system. A common example is SQL injection, where attackers can manipulate a website's database by inserting code into a form field.
+3. **Injection (A03)**:
+   - Injection attacks happen when attackers insert malicious code into a system. This could be through forms, URLs, or other input methods.
+   - Real Attack Scenario: An attacker enters code into a website's search box that tricks the system into revealing sensitive information, like customer databases.
 
-4. **Insecure Design**: This is about flaws in how a system is built, like not considering security from the start. An example could be designing a login system without thinking about how to prevent brute force attacks.
+4. **Insecure Design (A04)**:
+   - This occurs when a system is built without considering security from the start. It might have fundamental flaws that make it easy for attackers to exploit.
+   - Real Attack Scenario: A smart home device is designed without proper encryption, allowing attackers to remotely control it and access the homeowner's private data.
 
-5. **Security Misconfiguration**: This is when system settings are left insecure. For instance, leaving default passwords on a server, making it easy for attackers to gain access.
+5. **Security Misconfiguration (A05)**:
+   - Misconfiguration means the settings of a system aren't properly set up for security. It could be leaving default passwords, opening unnecessary ports, or other mistakes.
+   - Real Attack Scenario: A cloud server is left with default login credentials, so anyone who knows the defaults can access sensitive company data.
 
-6. **Vulnerable and Outdated Components**: This is when using outdated software with known security flaws. It's like using an old version of a library that has a known bug hackers can exploit.
+6. **Vulnerable and Outdated Components (A06)**:
+   - This is when a system uses software or components that have known security flaws or are outdated. Attackers can exploit these flaws to break into the system.
+   - Real Attack Scenario: Hackers exploit an old version of a software library used in a website to gain unauthorized access to user accounts.
 
-7. **Identification and Authentication Failures**: This means failing to properly identify users. For example, a website not requiring strong passwords or allowing easy password resets.
+7. **Identification and Authentication Failures (A07)**:
+   - This happens when a system fails to properly verify who users are and whether they should have access to certain resources.
+   - Real Attack Scenario: A banking app doesn't properly check users' passwords, allowing attackers to log in as anyone and steal money.
 
-8. **Software and Data Integrity Failures**: This is about not ensuring that software and data remain intact and unaltered. For instance, if updates to a software are not properly verified, hackers could inject malicious code.
+8. **Software and Data Integrity Failures (A08)**:
+   - Integrity failures mean that data or software has been tampered with or altered in an unauthorized way, compromising its reliability.
+   - Real Attack Scenario: Attackers manipulate the code of a mobile app to insert malicious code that steals users' personal information.
 
-9. **Security Logging and Monitoring Failures**: This is about not keeping track of what's happening in a system. For example, if a system doesn't log login attempts, it's harder to detect if someone is trying to break in.
+9. **Security Logging and Monitoring Failures (A09)**:
+   - This happens when a system doesn't properly log and monitor activity, making it harder to detect and respond to security threats.
+   - Real Attack Scenario: A company's network doesn't log failed login attempts, so they don't realize someone's trying to break in until it's too late.
 
-10. **Server-Side Request Forgery**: This means allowing attackers to make requests to a server from the server itself. For example, if a website allows users to input URLs for the server to fetch data from, attackers could use this to access sensitive information within the server's network.
-
+10. **Server-Side Request Forgery (A10)**:
+    - This occurs when a server accepts requests from a client without properly validating or sanitizing them, allowing attackers to make requests on behalf of the server.
+    - Real Attack Scenario: An attacker tricks a server into making requests to internal systems, accessing sensitive information or even performing actions like shutting down the server.
+    
 In an interview, these points might be discussed to understand how someone approaches securing web applications and their understanding of common security risks.
 ```
 
