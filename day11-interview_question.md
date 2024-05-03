@@ -1,6 +1,7 @@
 ## What is an API?
 
 ```bash
+It is a set of rules or protocols that allows programs and application to communicate with other.
 An API, or Application Programming Interface, is like a waiter in a restaurant. It helps two different software systems communicate and exchange information. Just like how you order food from a menu, software systems use APIs to request and send data between each other.
 ```
 
@@ -28,22 +29,32 @@ DELETE: This method is used to delete a resource from the server. It's like aski
 ## OWASP Top 10 API Security Risks – 2019:
 ```bash
 1. **API1 Broken Object Level Authorization**: This means that the API doesn't properly check if you're allowed to access certain data. For example, let's say there's an API for a bank and you're only supposed to see your own account details. But if the API doesn't check properly, you might be able to see someone else's account details.
+Attacker substitute ID of their resource in API call with an ID of a resource belonging to another user.
+this attack is also known as IDOR
+
 
 2. **API2 Broken User Authentication**: This happens when the API doesn't properly check if you're really the person you say you are. For instance, imagine a social media API that lets you post updates. If it doesn't check your login properly, someone else might be able to post as you.
+poorly implemented API authentication allow attackers to assume other user's identity {can do credntial stuffing by bruteforce method}
 
 3. **API3 Excessive Data Exposure**: This means the API gives out more information than it should. For example, a shopping website's API might reveal customer addresses when it's only supposed to show their names.
 
 4. **API4 Lack of Resource and Rate Limiting**: If an API doesn't have limits on how much data you can access or how often you can access it, it could be overwhelmed with requests. Imagine a ticket booking API that doesn't limit how many tickets you can check at once. Someone could flood the system with requests, causing it to crash.
+the API is not protected against an excecssive number of calls or payload size
+Attackers can use this for Denial of service and authentication flaws like bruteforce attacks {OTP Bruteforce attack}
+
 
 5. **API5 Broken Function Level Authorization**: Similar to Broken Object Level Authorization, but here it's about specific functions within the API. For example, an API might have a function to delete posts, but if it doesn't check properly, anyone could delete any post, not just their own.
 
 6. **API6 Mass Assignment**: This occurs when an API allows too much data to be modified at once. Imagine an API for updating user profiles where you can change your email, password, and username. If it's not properly secured, someone might be able to change other users' information as well.
+an input validation flaw that allows attackers to perform advanc attacks by manipulating payload
 
 7. **API7 Security Misconfiguration**: This happens when the settings of the API are not set up securely. For example, if the API is supposed to be accessed over HTTPS for encryption but is mistakenly set to HTTP, it could expose sensitive data.
+poor configuration of th API servers allow attackers to exploit them
 
 8. **API8 Injection**: Injection vulnerabilities occur when untrusted data is sent to an interpreter as part of a command or query. An example is SQL injection, where attackers can manipulate a database query to gain unauthorized access to data or even delete data.
 
 9. **API9 Improper Asset Management**: This is about not properly managing the resources and assets used by the API. For example, leaving old or unused code or files accessible could provide avenues for attackers to exploit vulnerabilities.
+v2 -> v1 in url path
 
 10. **API10 Insufficient Logging & Monitoring**: If an API doesn't keep track of what's happening (logging) or doesn't actively watch for suspicious activity (monitoring), it might not notice if someone is trying to attack it. This could lead to security breaches going unnoticed for a long time.
 ```
