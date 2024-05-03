@@ -47,3 +47,25 @@ DELETE: This method is used to delete a resource from the server. It's like aski
 
 10. **API10 Insufficient Logging & Monitoring**: If an API doesn't keep track of what's happening (logging) or doesn't actively watch for suspicious activity (monitoring), it might not notice if someone is trying to attack it. This could lead to security breaches going unnoticed for a long time.
 ```
+## OWASP Top 10 API Security Risks – 2023:
+```bash
+1. **Broken Object Level Authorization**: This means that the API doesn't properly check if a user has the right to access certain objects or data. For example, let's say a banking API doesn't check if a user has permission to access another user's account information. So, anyone could access sensitive data without proper authorization.
+
+2. **Broken Authentication**: This happens when the authentication process is flawed, allowing unauthorized users to gain access. An example would be an API that doesn't properly verify user credentials, allowing anyone to log in without a valid username and password.
+
+3. **Broken Object Property Level Authorization**: Similar to Broken Object Level Authorization, but this specifically refers to the access control on individual properties or attributes of an object. For instance, if a healthcare API doesn't properly restrict access to a patient's medical history, allowing unauthorized users to view sensitive information like diagnoses or treatments.
+
+4. **Unrestricted Resource Consumption**: This means that an API doesn't limit the resources (like CPU, memory, or bandwidth) that a single user can consume, making it vulnerable to denial-of-service attacks. For example, if an image processing API doesn't have limits on the size or number of images a user can upload, it could be overwhelmed by a flood of large files, causing it to crash or become unresponsive.
+
+5. **Broken Function Level Authorization**: This occurs when certain functions within the API are accessible to users who shouldn't have permission to use them. For instance, if a file storage API allows any user to delete files, regardless of their permissions or role.
+
+6. **Unrestricted Access to Sensitive Business Flows**: This means that the API allows users to access critical business processes or workflows without proper authentication or authorization. For example, if an e-commerce API allows users to bypass payment authentication and place orders without paying.
+
+7. **Server Side Request Forgery**: This vulnerability allows an attacker to manipulate the server into making unintended requests to other servers. For example, an API that allows users to input URLs for fetching data, without proper validation, could be exploited to access internal systems or sensitive information on other servers.
+
+8. **Security Misconfiguration**: This refers to insecure configurations in the API server or infrastructure, making it easier for attackers to exploit vulnerabilities. For example, leaving default passwords or unnecessary ports open on the server.
+
+9. **Improper Inventory Management**: This means that the API doesn't properly track or manage its assets or resources, leading to vulnerabilities like outdated software versions or unpatched security flaws. For instance, if a software update API doesn't keep track of which clients have installed the latest patches, leaving some systems vulnerable to known exploits.
+
+10. **Unsafe Consumption of APIs**: This refers to vulnerabilities caused by how the API consumes or interacts with other APIs or external resources. For example, if a weather API doesn't properly validate data received from another weather service before using it, allowing malicious data to cause unexpected behavior or security breaches.
+```
