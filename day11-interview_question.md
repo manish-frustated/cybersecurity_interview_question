@@ -25,45 +25,25 @@ PATCH: This method is used to partially update an existing resource on the serve
 DELETE: This method is used to delete a resource from the server. It's like asking the waiter to take your order off the table. For example, when you delete a post on a social media website, your browser sends a DELETE request to remove the post from the server.
 ```
 
-## OWASP Top 10 API Security Risks – 2023:
+## OWASP Top 10 API Security Risks – 2019:
 ```bash
-1. **Broken Object Level Authorization (API1:2023)**:
-   - **Explanation**: This means that the API doesn't properly check if the user has permission to access certain data or objects.
-   - **Example**: Imagine a banking API where users can view their account balance. If the API doesn't check if a user is authorized to view another user's balance, it's a broken object level authorization. So, User A could potentially see User B's balance.
+1. **API1 Broken Object Level Authorization**: This means that the API doesn't properly check if you're allowed to access certain data. For example, let's say there's an API for a bank and you're only supposed to see your own account details. But if the API doesn't check properly, you might be able to see someone else's account details.
 
-2. **Broken Authentication (API2:2023)**:
-   - **Explanation**: This is when the process that verifies a user's identity is flawed, allowing unauthorized users to access the system.
-   - **Example**: If a shopping website's API doesn't properly verify user credentials during login, attackers might be able to access someone else's account just by guessing passwords or exploiting weaknesses in the authentication process.
+2. **API2 Broken User Authentication**: This happens when the API doesn't properly check if you're really the person you say you are. For instance, imagine a social media API that lets you post updates. If it doesn't check your login properly, someone else might be able to post as you.
 
-3. **Broken Object Property Level Authorization (API3:2023)**:
-   - **Explanation**: Similar to broken object level authorization, but focuses on specific properties or attributes of an object.
-   - **Example**: In a social media API, if users can edit their own posts but the API doesn't check if they have permission to edit specific parts, like comments, it's a broken object property level authorization.
+3. **API3 Excessive Data Exposure**: This means the API gives out more information than it should. For example, a shopping website's API might reveal customer addresses when it's only supposed to show their names.
 
-4. **Unrestricted Resource Consumption (API4:2023)**:
-   - **Explanation**: This vulnerability allows attackers to use up all the resources available to an API, like memory or processing power, causing it to crash or become unavailable to legitimate users.
-   - **Example**: A file-sharing API that doesn't limit the size or number of files a user can upload could be vulnerable to unrestricted resource consumption. An attacker could flood the API with large files, overwhelming its capacity.
+4. **API4 Lack of Resource and Rate Limiting**: If an API doesn't have limits on how much data you can access or how often you can access it, it could be overwhelmed with requests. Imagine a ticket booking API that doesn't limit how many tickets you can check at once. Someone could flood the system with requests, causing it to crash.
 
-5. **Broken Function Level Authorization (API5:2023)**:
-   - **Explanation**: Similar to broken object level authorization, but focuses on specific functions or actions a user can perform.
-   - **Example**: If a messaging app's API allows any authenticated user to delete messages, regardless of who sent them, it's a broken function level authorization.
+5. **API5 Broken Function Level Authorization**: Similar to Broken Object Level Authorization, but here it's about specific functions within the API. For example, an API might have a function to delete posts, but if it doesn't check properly, anyone could delete any post, not just their own.
 
-6. **Unrestricted Access to Sensitive Business Flows (API6:2023)**:
-   - **Explanation**: This vulnerability allows unauthorized users to access or manipulate critical processes or workflows within the system.
-   - **Example**: An e-commerce API that lets anyone access the checkout process without proper authentication or authorization, potentially allowing them to manipulate orders or payments.
+6. **API6 Mass Assignment**: This occurs when an API allows too much data to be modified at once. Imagine an API for updating user profiles where you can change your email, password, and username. If it's not properly secured, someone might be able to change other users' information as well.
 
-7. **Server Side Request Forgery (API7:2023)**:
-   - **Explanation**: This is when an attacker can make the server perform actions on their behalf, often to access unauthorized resources or information.
-   - **Example**: If an API allows users to input URLs for image processing, but doesn't properly validate those URLs, an attacker could input a URL that points to internal resources, like configuration files, leading to server-side request forgery.
+7. **API7 Security Misconfiguration**: This happens when the settings of the API are not set up securely. For example, if the API is supposed to be accessed over HTTPS for encryption but is mistakenly set to HTTP, it could expose sensitive data.
 
-8. **Security Misconfiguration (API8:2023)**:
-   - **Explanation**: This occurs when security settings are not properly configured, leaving vulnerabilities open to exploitation.
-   - **Example**: If an API's default passwords are not changed, or if unnecessary services are left running, it's a security misconfiguration.
+8. **API8 Injection**: Injection vulnerabilities occur when untrusted data is sent to an interpreter as part of a command or query. An example is SQL injection, where attackers can manipulate a database query to gain unauthorized access to data or even delete data.
 
-9. **Improper Inventory Management (API9:2023)**:
-   - **Explanation**: This vulnerability involves inadequate tracking or control of assets or resources within the system.
-   - **Example**: A cloud storage API that doesn't properly track how much storage space each user is using could run out of space unexpectedly, affecting all users.
+9. **API9 Improper Asset Management**: This is about not properly managing the resources and assets used by the API. For example, leaving old or unused code or files accessible could provide avenues for attackers to exploit vulnerabilities.
 
-10. **Unsafe Consumption of APIs (API10:2023)**:
-    - **Explanation**: This refers to using APIs in a way that exposes vulnerabilities or security risks.
-    - **Example**: If an application uses a third-party API without verifying the data it receives, it could be vulnerable to injection attacks or other security exploits.
+10. **API10 Insufficient Logging & Monitoring**: If an API doesn't keep track of what's happening (logging) or doesn't actively watch for suspicious activity (monitoring), it might not notice if someone is trying to attack it. This could lead to security breaches going unnoticed for a long time.
 ```
