@@ -51,7 +51,7 @@ Overall, ISO 9001:2015 helps organizations like your bakery consistently deliver
 
 ## ISO 27001:2013
 ```bash
-ISO 27001:2013 is an international standard that outlines the requirements for establishing, implementing, maintaining, and continually improving an information security management system (ISMS) within an organization. It's designed to help organizations manage and protect their sensitive information assets, such as financial data, intellectual property, and customer information, in a systematic and consistent manner.
+ISO 27001:2013 is an international security standard that lays out best practices for how organizations should manage their data. It outlines how companies should manage information security risk by creating an information security management system (ISMS).
 
 Here's an explanation of ISO 27001:2013 with examples:
 
