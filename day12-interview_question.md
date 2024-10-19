@@ -1,4 +1,4 @@
-Common vulnerability: Common vulnerabilities include misconfigured systems, outdated software versions, and weak password policies. Attackers often exploit these gaps to gain unauthorized access or escalate privileges.
+**Common vulnerability**: Common vulnerabilities include misconfigured systems, outdated software versions, and weak password policies. Attackers often exploit these gaps to gain unauthorized access or escalate privileges.
 
 Daily task: My tasks include scanning for vulnerabilities, monitoring logs for suspicious activity, and applying patches or fixes. Additionally, I ensure secure configurations and enforce security policies.
 
